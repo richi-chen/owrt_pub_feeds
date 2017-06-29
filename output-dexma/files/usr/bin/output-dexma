@@ -146,7 +146,7 @@ local function process_cache(cache)
 		local entry = {
 			did = i,
 			sqn = 1,
-			ts = os.date('%Y-%m-%dT%H:%M:%S', math.ceil(v.ts/1000)),
+			ts = os.date('%Y-%m-%dT%H:%M:%SZ', math.ceil(v.ts/1000)),
 			values = {
 				{p=402, v=v.kwh}
 			}
